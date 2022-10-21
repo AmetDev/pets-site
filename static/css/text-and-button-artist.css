@@ -1,5 +1,5 @@
 .content_text {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -7,9 +7,12 @@
 }
 
 .artist {
-    background: linear-gradient(to top, #fff 50%, #504DC2 50%);
+    /* background: linear-gradient(to top, #fff 50%, #504DC2 50%); */
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background: linear-gradient(#504DC2, #9198e5);
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .container_artist {
     width: 100%;
@@ -28,3 +31,26 @@
     max-width: 540px;
 }
 
+@media (max-width:885px) {
+    .text_artist {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 763px) {
+
+    .text_artist {
+        text-align: center;
+    }
+
+    .artist {
+        /* background: linear-gradient(#e66465, #9198e5); */
+        background: linear-gradient(#504DC2, #9198e5);
+    }
+
+    .content_text{
+        padding-top: 50px;
+        align-items: center;
+        flex-direction: column;
+    }
+}

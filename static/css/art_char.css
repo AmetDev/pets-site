@@ -1,6 +1,9 @@
 .artist_char {
-    max-width: 355px;
+    max-width: 340px;
     width: 100%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+   
     
 }
 
@@ -38,4 +41,15 @@
     font-weight: 600;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.text_art_char {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.liza_border {
+    border-radius: 10px;
 }
