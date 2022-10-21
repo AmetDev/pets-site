@@ -1,2 +1,8 @@
+@import url(settings.css);
+@import url(nullstyle.css);
 @import url(header.css);
-@import url(item.css);
+@import url(intro.css);
+@import url(info.css);
+@import url(bot.css);
+@import url(text-and-button-artist.css);
+@import url(art_char.css);

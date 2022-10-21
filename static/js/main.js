@@ -5,3 +5,6 @@ sayHello();
 
 import { sayHello1 } from "./slider-background.js";
 sayHello1();
+
+import { Burger } from "./burger-menu.js";
+Burger();

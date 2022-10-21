@@ -1,0 +1,41 @@
+.artist_char {
+    max-width: 355px;
+    width: 100%;
+    
+}
+
+.artist_item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1093px) {
+    .artist_item {
+        justify-content: space-evenly;
+    }
+    .artist_char {
+        margin-bottom: 20px;
+    }
+} 
+
+.artist_subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 25.36px;
+}
+
+.artist_name > span {
+    color: #4985FF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.artist_name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

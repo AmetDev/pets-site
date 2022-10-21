@@ -4,14 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/main.css"> <!--JINJA-->
 </head>
 <body>
-    <div class="footer"><span class="footet_text">Hello World</span></div>
-    <div class="text_2">Hello2</div>
+    <!--HEADER-->
+   <header class="header">
+        <div class="container_header">
+            <div class="header_inner">
+                <nav class="nav">
+                    <a class="nav__link" href="#">Главная</a>
+                    <a class="nav__link" href="#">Подробнее</a>
+                    <a class="nav__link" href="#">Поддержка</a>
+                    <a class="nav__link" href="#">Узнай больше</a>
+                    <a class="nav__link" href="#">Команда</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                  </nav>
+        
+                  <button class="burger" type="button">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                  </button>
+                </div>
+                <div class="popup">
+                    <div class="popup_inner"></div>
+                </div>
+            </div>           
+   </header>
+   <!--/EADER-->
+
+   <!--INTRO-->
+   <div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__title"><span class="text_title">Мы предлагаем вам помочь бездомным животным</span></div>
+            <button class="button"><a href="https://t.me/testbot" class="teg_text">телеграмм</a></button> <!--JINJA-->
+        </div>
+    </div>
+   </div>
+   <!--/INTRO-->
+
+  
+   <!--INFO-->
+   <div class="info">
+    <div class="container_info">
+        <div class="info_position">
+            <div class="info_inner">
+                <div class="info_title">
+                    <span class="title_text">Примерно 4 млн бездомных собак и кошек по всей России</span>
+                </div>
+                <div class="info_subtitle">
+                    <span class="info_subtitle_text">3,2 млн кошек и 735 тысяч собак живут на улице, еще 144 тысячи животных — в приютах.</span>
+                </div>
+            </div>
+        </div>
+       
+          <div class="icons_inner">
+                <div class="icon_item">
+                    <div class="icon_char">
+                        <img class="global_img" src="/img/icon/globq1.svg" alt=""> <!--JINJA-->
+                        <div class="text_icon_inner">
+                            <div class="icon_title"><span class="icon_title_span">Статистика Мира</span></div>
+                            <div class="icon_subtitle"><span class="icon_subtitle_span">По данным Всемирного общества защиты животных, из 500 млн собак, живущих в мире, до 75 % являются бродячими.</span></div>
+                        </div>
+                    </div>
+                    <div class="icon_char">
+                        <img class="global_img" src="/img/icon/city1.svg" alt=""> <!--JINJA-->
+                        <div class="text_icon_inner">
+                            <div class="icon_title"><span class="icon_title_span">Города и поселки</span></div>
+                            <div class="icon_subtitle"><span class="icon_subtitle_span">По результатам исследования выяснилось, что бездомных животных одинаково много как в городе, так и в сельской местности.</span></div>
+                        </div>
+                    </div>
+                    <div class="icon_char">
+                        <img class="global_img" src="/img/icon/vaccine1.svg" alt=""> <!--JINJA-->
+                        <div class="text_icon_inner">
+                            <div class="icon_title"><span class="icon_title_span">Бешенство</span></div>
+                            <div class="icon_subtitle"><span class="icon_subtitle_span">Ежегодно в мире от этой болезни умирает свыше 55000 человек. Около 15 миллионов людей, пострадавших от укусов бродячих собак.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </div> 
+   </div>
+   <!--/INFO-->
+
+   <!--BOT-->
+   <div class="bot_blog">
+    <div class="container_bot">
+        <div class="bot_inner">
+            <div class="bot_inner_in">
+                <div class="bot_icon">
+                    <img class="img_icon_bot" src="/img/icon/telegram_icon_1.svg" alt=""> <!--JINJA-->
+                </div>
+                <div class="bot_text">
+                    <div class="bot_text_inner">
+                        <div class="bot_title">
+                            <span>Telegram bot</span>
+                        </div>
+                        <div class="bot_subtitle">
+                            <span>Если вам небезразлична судьба бездомных животных, то перейдите, ознакомьтесь с функционалом бота и попробуйте помочь.</span> 
+                        </div>
+                        <a href="" class="bot_link">бот</a>
+                    </div>      
+                </div>
+            </div>        
+        </div>
+    </div>
+   </div>
+   <!--/BOT-->
+
+   <!--HUMAN-->
+   <div class="artist">
+        <div class="container_artist">
+            <div class="content_text">
+                <span class="text_artist">Звезды, которые помогают бездомным животным</span>
+                <button class="button">Помоги и ты!</button>
+            </div>
+            <div class="artist_item">
+                <div class="artist_char">
+                    <img class="art_icon" width="350px" height="300px"  src="/img/human/01.png" alt="">
+                    <div class="artist_name"><span>01.</span> Леонардо Ди Каприо</div>
+                    <div class="artist_subtitle">Желание кормить беспризорных животных у актера появилось рано. А как только в кармане у голливудского актера зашуршали купюры, он стал основателем  приютов для бездомных животных. Знаменитость пожертвовала $1 млн Всемирному фонду дикой природы на сохранение популяции тигров.</div>
+                </div>
+                <div class="artist_char">
+                    <img class="art_icon"  width="350px" height="300px"  src="/img/human/02.png" alt="">
+                    <div class="artist_name"><span>02.</span>Лиза Эдельштейн</div>
+                    <div class="artist_subtitle">Актриса Лиза Эдельштейн, исполнившая Кадди в сериале «Доктор Хаус», за помощь приютам животных прозвали сестрой милосердия. Лиза выступает на тематических мероприятиях, ищет хозяев, которые смогут подарить кров и заботу, а также помогает братьям меньшим после ураганов.</div>
+                </div>
+                <div class="artist_char">
+                    <img class="art_icon" width="350px" height="300px"  src="/img/human/03.png" alt="">
+                    <div class="artist_name"><span>03.</span>Том Харди</div>
+                    <div class="artist_subtitle">Актер призывает людей брать питомцев из приютов, а не покупать в магазинах или питомниках. Одну из своих собак Том подобрал на улице. Пес был с ним везде, даже на съемочной площадке и кинопремьерах. Вместе с Вуди актер рассказывал детям сказки на канале "BBC".</div>
+                </div>
+            </div>
+        </div>
+   </div>
+   <!--HUMAN-->
 
     
-    <script type="module" src="/static/js/main.js"></script>
+    <script type="module" src="/static/js/main.js"></script> <!--JINJA-->
 </body>
 </html>

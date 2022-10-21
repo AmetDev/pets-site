@@ -1,0 +1,30 @@
+.content_text {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.artist {
+    background: linear-gradient(to top, #fff 50%, #504DC2 50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_artist {
+    width: 100%;
+    max-width: 1115px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;    
+}
+
+.text_artist {
+    font-weight: 700;
+    color: #fff;
+    font-size: 36px;
+    display: block;
+    width: 100%;
+    max-width: 540px;
+}
+

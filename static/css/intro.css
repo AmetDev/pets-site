@@ -1,0 +1,155 @@
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 969px;
+    background: url("/img/header/dog-wallpaper.png") center no-repeat;
+    background-size: cover;
+    
+   
+  }
+  .intro__inner {
+    width: 100%;
+    max-width: 1115px;
+    text-align: center;
+  }
+  
+.text_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    color: #fff;
+    background-color:#4985FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 414px) {
+  .button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+  margin-top: 30px;
+  }
+}
+
+/* Burger */
+.burger {
+    border: 0;
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: relative;
+    z-index: 1011;
+    overflow: hidden;
+    margin-right: 15px;
+   
+  }
+  
+  .burger__item {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background-color:  #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+    margin: 3px;
+  }
+
+  .burger__item:nth-of-type(1) {
+    top: calc(50% - 5px);
+  }
+  
+  .burger__item:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+  
+  .popup_inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  /* Media
+  =============================*/
+  
+  @media (max-width: 991px) {
+    /* Nav */
+    .nav {
+      display: none;
+      
+    }
+    .text_title {    
+        font-size: 32px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .nav__link {
+      margin-left: 0;
+      display: block;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      text-align: center;
+     
+    
+    }
+  
+    .nav.active {
+      display: flex;
+      flex-direction: column;
+    
+      line-height: 100px;
+      font-size: 25px;
+    }
+  
+    /*Burger*/
+    .burger {
+      display: block;
+    }
+    .burger__item--active_items:nth-of-type(1) {
+      transform: translate(-10px, -8px) rotate(45deg);
+      transform-origin: left top;
+    }
+  
+    .burger__item--active_items:nth-of-type(2) {
+      transform: scale(0);
+    }
+  
+    .burger__item--active_items:nth-of-type(3) {
+      transform: translate(-18px, -19px) rotate(-45deg);
+      transform-origin: right bottom;
+    }
+  }  
+
+@media (max-width: 415px) {
+    .text_title {
+        font-size: 28px;
+    }
+}
