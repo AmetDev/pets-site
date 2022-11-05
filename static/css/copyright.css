@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.copyright {
+    padding: 20px 0;
+    background-color: #313454;
+  }
+  
+  .copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+  }
+  
+  .copyright__text span {
+    color: #fff;
+  }
+  

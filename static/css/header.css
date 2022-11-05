@@ -10,7 +10,7 @@
 }
 .container_header {
     width: 100%;
-    max-width: 1115px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;  
@@ -24,12 +24,9 @@
 }
 
 .header_inner {
-    padding: 35px 0;
+    
     display: flex;
     max-width: 815px;
-   
-   
-    
 }
 
 
@@ -37,15 +34,13 @@
 =============================*/
 
 .nav {
-    display: flex;
     font-size: 16px;
     font-weight: 500;
-    
-    
   }
   
   .nav__link {
-    margin-left: 50px;
+    padding-left: 20px;
+    justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;

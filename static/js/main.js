@@ -1,4 +1,5 @@
-console.log("hello world")
+
+
 
 import {sayHello} from "./carousel.js";
 sayHello();
@@ -8,3 +9,6 @@ sayHello1();
 
 import { Burger } from "./burger-menu.js";
 Burger();
+
+import { scroll } from "./scroll.js";
+scroll();

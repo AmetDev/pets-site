@@ -1,0 +1,141 @@
+a {
+    text-decoration: none;
+}
+
+.video-dog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(/img/video/bg-dog.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1927px;
+    height: 517px;
+    margin-bottom: 200px;
+
+}
+
+@media (max-width:800px) {
+    .video-dog {
+    background: url(/img/video/viedo-mb.png) center no-repeat;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .video-dog {
+        background: url(/img/video/video-mb-1.png) center no-repeat;
+    }
+}
+
+.title_video {
+    font-weight: 700;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+}
+
+.container_video {
+    width: 100%;
+    max-width: 1115px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_video {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 100px;
+
+}
+
+.subtitle_video {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:732px) {
+    .title_video {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .subtitle_video {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.video_link_out {
+    display: flex;
+    justify-content: center;
+}
+
+.video_link {
+    background: url(/img/video/click-video.png);
+    max-width: 1000px;
+    width: 100%;
+    height: 430px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.video_btn {
+    background: transparent;
+    padding: 10px 60px 10px 60px;
+    border: 1px solid #fff;
+    border-radius: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+.video_btn_inner {
+    padding: 30px;
+    border-radius: 90px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+   
+
+}
+
+.treygl_video {
+    /* Направленный вправо */
+    position: absolute;
+	display: inline-block;
+	border: 20px solid transparent; 
+	border-left: 30px solid #4985FF;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.treygl_video:hover {
+    border-left: 30px solid #0458ff;
+
+}
+
+.video_text {
+    color: #fff;
+
+}

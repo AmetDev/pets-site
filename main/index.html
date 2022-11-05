@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/main.css"> <!--JINJA-->
 </head>
 <body>
+    <svg style="display: none">
+        <symbol id="facebook" viewBox="0 0 100 100">
+          <g>
+            <path
+              d="M45.4617 25.8328C47.6106 23.7911 50.6527 23.0971 53.5357 23.0167C56.5787 22.99 59.6217 23.0033 62.6638 23.0033C62.6772 26.2196 62.6772 29.4224 62.6638 32.6387C60.7024 32.6387 58.7268 32.6387 56.7654 32.6387C55.5239 32.5583 54.2431 33.5059 54.0163 34.7474C53.9895 36.8963 54.0029 39.0444 54.0029 41.1933C56.8851 41.2067 59.7681 41.1933 62.6504 41.2067C62.4369 44.3157 62.0502 47.4123 61.5964 50.482C59.0474 50.5088 56.4983 50.482 53.9493 50.4954C53.9225 59.6636 53.9627 68.8184 53.9359 77.9874C50.1454 78.0008 46.3691 77.9741 42.5786 78.0008C42.5116 68.8326 42.5786 59.6644 42.5384 50.4954C40.6967 50.482 38.8417 50.5088 37 50.482C37.0134 47.3989 37 44.3166 37 41.2468C38.8417 41.22 40.6967 41.2468 42.5384 41.2334C42.592 38.2441 42.4848 35.2413 42.592 32.2519C42.7929 29.8636 43.687 27.4744 45.4617 25.8328Z"
+            />
+          </g>
+        </symbol>
+  
+        <symbol id="twitter" viewBox="0 0 100 100">
+          <g>
+            <path
+              d="M75 34.773C73.1815 35.6819 71.1367 36.1367 69.0911 36.3637C71.1367 35 72.7274 33.1823 73.6363 30.6819C71.5907 31.8185 69.5452 32.7274 67.0456 33.1815C65.227 31.1359 62.5004 30 59.546 30C53.8641 30 49.3189 34.5452 49.3189 40.227C49.3189 41.1359 49.3189 41.8177 49.546 42.4996C41.1367 42.0448 33.6371 37.9544 28.4101 31.8177C27.5012 33.4085 27.0464 34.9992 27.0464 37.0448C27.0464 40.6811 28.8649 43.6355 31.5915 45.454C30.0008 45.454 28.4101 44.9992 27.0464 44.0903V44.3174C27.0464 49.3174 30.4556 53.4085 35.2278 54.3174C34.3189 54.5444 33.4093 54.7722 32.5004 54.7722C31.8185 54.7722 31.1367 54.7722 30.6819 54.5452C32.0456 58.6363 35.6819 61.5907 40.227 61.5907C36.8177 64.3181 32.2726 65.9089 27.4996 65.9089C26.5907 65.9089 25.9089 65.9089 25 65.6819C29.5452 68.6363 34.773 70.227 40.6819 70.227C59.5452 70.227 69.7722 54.773 69.7722 41.1367V39.773C72.0456 38.6363 73.6363 36.8185 75 34.773Z"
+            />
+          </g>
+        </symbol>
+  
+        <symbol id="telegram" viewBox="0 0 100 100">
+          <g>
+            <path
+              d="M70.7373 29.3678C70.7373 29.3678 75.3626 27.5643 74.9772 31.9444C74.8487 33.748 73.6924 40.0605 72.793 46.8883L69.7094 67.1142C69.7094 67.1142 69.4525 70.0772 67.1398 70.5925C64.827 71.1078 61.3581 68.789 60.7156 68.2736C60.2017 67.8872 51.0795 62.0899 47.8674 59.2557C46.968 58.4828 45.9401 56.9368 47.9958 55.1332L61.4866 42.2506C63.0284 40.7047 64.5701 37.0975 58.146 41.4776L40.1585 53.7162C40.1585 53.7162 38.1027 55.0044 34.2483 53.845L25.8969 51.2685C25.8969 51.2685 22.8133 49.3361 28.0811 47.4036C40.9294 41.3487 56.7328 35.165 70.7373 29.3678Z"
+            />
+          </g>
+        </symbol>
+      </svg>
     <!--HEADER-->
-   <header class="header">
+   <header  class="header">
         <div class="container_header">
             <div class="header_inner">
                 <nav class="nav">
@@ -21,6 +45,7 @@
                     <a class="nav__link" href="#">Поддержка</a>
                     <a class="nav__link" href="#">Узнай больше</a>
                     <a class="nav__link" href="#">Команда</a>
+                    <a class="nav__link" href="#">Видео</a>
                     <a class="nav__link" href="#">Контакты</a>
                   </nav>
         
@@ -37,12 +62,13 @@
    </header>
    <!--/EADER-->
 
-   <!--INTRO-->
-   <div class="intro">
+   <div class="wrapper">
+     <!--INTRO-->
+   <div id="footer" class="intro">
     <div class="container">
         <div class="intro__inner">
             <div class="intro__title"><span class="text_title">Мы предлагаем вам помочь бездомным животным</span></div>
-            <button class="button"><a href="https://t.me/testbot" class="teg_text">телеграмм</a></button> <!--JINJA-->
+            <button class="button"><a href="https://t.me/testbot" class="teg_text">телеграм</a></button> <!--JINJA-->
         </div>
     </div>
    </div>
@@ -50,7 +76,7 @@
 
   
    <!--INFO-->
-   <div class="info">
+   <div id="footer" class="info">
     <div class="container_info">
         <div class="info_position">
             <div class="info_inner">
@@ -94,7 +120,7 @@
    <!--/INFO-->
 
    <!--BOT-->
-   <div class="bot_blog">
+   <div id="footer" class="bot_blog">
     <div class="container_bot">
         <div class="bot_inner">
             <div class="bot_inner_in">
@@ -119,7 +145,7 @@
    <!--/BOT-->
 
    <!--HUMAN-->
-   <div class="artist">
+   <div id="footer" class="artist">
         <div class="container_artist">
             <div class="content_text">
                 <span class="text_artist">Звезды, которые помогают бездомным животным</span>
@@ -155,19 +181,110 @@
    <!--/HUMAN-->
 
    <!--TEAM-->
-   <div class="team">
+   <div id="footer" class="team">
     <div class="container">
         <div class="team_block">
-            <div class="team_char">
-                <div class="team_icon"><img src="" alt=""></div>
-                <div class="team_name"></div>
-                <div class="team_about_us">HELLO</div>
+            <div class="team_text">
+                <div class="team_title">Наша Команда</div>
+                <div class="team_subtitle">Мы молодая команда программистов предлагающая вам помочь бездомным животным.</div>
             </div>
+            <div class="team_char_block">
+                <div class="team_char">
+                    <div class="team_icon"><img src="/img/team/icon-cha01r.png" alt=""></div>
+                    <div class="team_name"><span class="team_span_numb">01.</span> Шейхислямов Камиль</div>
+                    <div class="team_about_us">Python Backend Developer. Опыт в разработке 2 года.</div>
+                </div>
+                <div class="team_char">
+                    <div class="team_icon"><img src="/img/team/icon-cha01r.png" alt=""></div>
+                    <div class="team_name"><span class="team_span_numb">02.</span> Сейдалиев Амет</div>
+                    <div class="team_about_us">Frontend Developer. Опыт в разработке фронтеда 1 год.</div>
+                </div>
+            </div>
+           
         </div>
     </div>
     
    </div>
    <!--/TEAM-->
+
+   <!--VIDEO-->
+   <div id="footer" class="video-dog">
+    <div class="container_video">
+        <span class="title_video">Узнай больше</span>
+        <span class="subtitle_video">Как друга человека превращают во врага</span>
+    </div>
+    <div class="video_link_out">
+        <!-- <img class="video_link" src="/img/video/click-video.png" alt=""> -->
+        <!-- <button>click</button> -->
+        <div class="video_link">
+            <div class="video_btn">
+                <button class="video_btn_inner">
+                    <a class="treygl_video" href="https://www.youtube.com/watch?v=kE0LS12c-64&t=330s"></a>
+                </button>
+                <div class="video_text">Смотреть видео</div>
+            </div>
+            <!-- <button><a href="https://www.youtube.com/watch?v=kE0LS12c-64">button</a></button> -->
+        </div>
+       
+    </div>
+   </div>
+   <!--/VIDEO-->
+   <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__block">
+          <h4 class="footer__title">Location</h4>
+          <address class="footer__adress">
+            <div>3481 Melrose Place</div>
+            <div>Beverly Hills, CA 90210</div>
+          </address>
+        </div>
+
+        <div class="footer__block">
+          <h4 class="footer__title">Share with Love</h4>
+
+          <div class="social social--footer">
+            <a class="social__item" href="#" target="_blank">
+              <svg class="social__icon">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+            <a class="social__item" href="#" target="_blank">
+              <svg class="social__icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+            <a class="social__item" href="#" target="_blank">
+              <svg class="social__icon">
+                <use xlink:href="#telegram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__block">
+          <h4 class="footer__title">About ActiveBox</h4>
+          <div class="footer__text">
+            <p>
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+              Donec ullamcorper nulla non metus auctor fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/.footer__inner -->
+    </div>
+    <div class="copyright">
+        <div class="copyright__text">
+            <div>Copyright © 2022 HelptoPets.</div>
+            <div>Made with ♥ <span>by Amet Seidaliev</span></div>
+        </div>
+    </div>
+
+  
+   
+   </div>
+  
 
     
     <script type="module" src="/static/js/main.js"></script> <!--JINJA-->
