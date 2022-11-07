@@ -12,6 +12,7 @@ a {
     max-width: 1927px;
     height: 517px;
     margin-bottom: 200px;
+    
 
 }
 
@@ -63,6 +64,20 @@ a {
     margin-bottom: 40px;
 }
 
+.video_inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+@media (max-width: 870px) {
+    .video_inner {
+        margin-top: 40px;
+    }
+}
+
+
+
 @media (max-width:732px) {
     .title_video {
         font-size: 24px;
@@ -71,8 +86,13 @@ a {
 
     .subtitle_video {
         font-size: 14px;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 30px;
+
+    }
+
+    .video_inner {
+        margin-top: 70px;
     }
 }
 
@@ -92,6 +112,12 @@ a {
     align-items: center;
     flex-direction: column;
    
+}
+
+@media (max-width:1000px) {
+    .video_link {
+        background: none;
+    }
 }
 
 .video_btn {

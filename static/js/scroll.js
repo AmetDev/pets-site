@@ -1,23 +1,28 @@
 export function scroll() {
-    let links = document.querySelectorAll(".nav");
-    links.forEach((char) => {
-      char = document.querySelectorAll(".nav__link");
-      console.log(char);
-      let footerArr = document.querySelectorAll(".wrapper");
-      footerArr.forEach((footerChar) => {
-        footerChar = document.querySelectorAll("#footer");
-        console.log(footerChar);
-      })
+  const Links = document.querySelectorAll(".nav__link")
+  console.log(Links)
+  Links.forEach((value, indexNav) => {
+    value.addEventListener("click", function() {
+      console.log(indexNav)
+      
+      const footerChar = document.querySelectorAll("#footer");
+      
+      footerChar.forEach((value, index1) => {
+         if (indexNav === index1) {
+          function scrollTo(element2) {
+            window.scroll({
+              left: 0,
+              top: element2.offsetTop,
+              behavior: 'smooth'
+            });
+           
+          };
+          scrollTo(value);
+         };
+         
+      });
+   
     });
-
-    // function CurrentLinks(event) {
-    //     let CurrentLinks = event.target.closest(".nav__link");
-    //     let navArr = document.querySelectorAll('.nav');
-    //     navArr.forEach((char) => {
-    //         let charall = char.indexOf();
-    //         console.log(charall);
-    //     })
-        
-
-    // }
+   
+  });
 }

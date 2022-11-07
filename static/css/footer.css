@@ -11,7 +11,6 @@
   
   .footer__inner {
     padding: 70px 0;
-  
     display: flex;
     flex-wrap: wrap;
   }
@@ -102,3 +101,20 @@
   .social--footer .social__icon {
     fill: #fff;
   }
+
+@media (max-width:767px) {
+  .footer__inner {
+    padding: 30px 0;
+  }
+
+  .footer__block {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__block:last-child {
+    margin-bottom: 0;
+  }
+}
