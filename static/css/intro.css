@@ -5,7 +5,8 @@
     justify-content: center;
     width: 100%;
     height: 969px;
-    background: url("/img/header/dog-wallpaper.png") center no-repeat;
+    background: url("/img/header/dog-wallpaper.png");
+   
     background-size: cover;
     
    
@@ -14,6 +15,7 @@
     width: 100%;
     max-width: 1115px;
     text-align: center;
+   
   }
   
 .text_title {

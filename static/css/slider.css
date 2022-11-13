@@ -1,0 +1,17 @@
+.swiper {
+
+  }
+
+.swiper-slide {
+    background: url("/img/header/dog-wallpaper.png");
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 969px;
+    background-color:black;
+   
+    background-size: cover;
+}
+

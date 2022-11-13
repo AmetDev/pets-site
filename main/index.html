@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/main.css"> <!--JINJA-->
 </head>
@@ -66,28 +67,32 @@
      <!--INTRO-->
    <div id="footer" class="intro">
     <div class="container">
-        <div class="intro__inner">
-            <div class="intro__title"><span class="text_title">Мы предлагаем вам помочь бездомным животным</span></div>
-            <button class="button"><a href="https://t.me/testbot" class="teg_text">телеграм</a></button> <!--JINJA-->
-        </div>
-    </div>
+      <div class="intro__inner ">
+        <div class="intro__title"><span class="text_title">Мы предлагаем вам помочь бездомным животным</span></div>
+        <button class="button"><a href="https://t.me/testbot" class="teg_text">телеграм</a></button> <!--JINJA-->
+      </div>
+    </div>    
    </div>
    <!--/INTRO-->
 
   
    <!--INFO-->
+   
    <div id="footer" class="info">
     <div class="container_info">
         <div class="info_position">
             <div class="info_inner">
                 <div class="info_title">
                     <span class="title_text">Примерно 4 млн бездомных собак и кошек по всей России</span>
+                    
                 </div>
                 <div class="info_subtitle">
                     <span class="info_subtitle_text">3,2 млн кошек и 735 тысяч собак живут на улице, еще 144 тысячи животных — в приютах.</span>
+                   
                 </div>
             </div>
         </div>
+       
        
           <div class="icons_inner">
                 <div class="icon_item">
@@ -117,6 +122,7 @@
        
     </div> 
    </div>
+  
    <!--/INFO-->
 
    <!--BOT-->
@@ -290,6 +296,29 @@
   
 
     
-    <script type="module" src="/static/js/main.js"></script> <!--JINJA-->
+    <script type="module" src="/static/js/main.js">
+      const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+    </script> <!--JINJA-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> <!--JINJA-->
 </body>
 </html>
