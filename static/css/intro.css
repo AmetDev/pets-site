@@ -1,6 +1,6 @@
 
 .intro {
-    background: url("/img/header/dog-wallpaper.png");
+    background: url("/img/header/dog-wallpaper.png") center no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
