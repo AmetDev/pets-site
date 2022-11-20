@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
    
     <title>Document</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='main.css') }}"> <!--JINJA-->
+    <link rel="stylesheet" href="{{url_for('static/css', filename='main.css') }}"> <!--JINJA-->
 </head>
 <body>
     <svg style="display: none">
@@ -99,21 +99,21 @@
           <div class="icons_inner">
                 <div class="icon_item">
                     <div class="icon_char">
-                        <img class="global_img" src="/img/icon/globq1.svg" alt=""> <!--JINJA-->
+                        <img class="global_img" src="{{ url_for('static/img/icon', filename='globq1.svg') }}" alt=""> <!--JINJA-->
                         <div class="text_icon_inner">
                             <div class="icon_title"><span class="icon_title_span">Статистика Мира</span></div>
                             <div class="icon_subtitle"><span class="icon_subtitle_span">По данным Всемирного общества защиты животных, из 500 млн собак, живущих в мире, до 75 % являются бродячими.</span></div>
                         </div>
                     </div>
                     <div class="icon_char">
-                        <img class="global_img" src="/img/icon/city1.svg" alt=""> <!--JINJA-->
+                        <img class="global_img" src="{{ url_for('static/img/icon', filename='city1.svg') }}" alt=""> <!--JINJA-->
                         <div class="text_icon_inner">
                             <div class="icon_title"><span class="icon_title_span">Города и поселки</span></div>
                             <div class="icon_subtitle"><span class="icon_subtitle_span">По результатам исследования выяснилось, что бездомных животных одинаково много как в городе, так и в сельской местности.</span></div>
                         </div>
                     </div>
                     <div class="icon_char">
-                        <img class="global_img" src="/img/icon/vaccine1.svg" alt=""> <!--JINJA-->
+                        <img class="global_img" src="{{ url_for('static/img/icon', filename='vaccine1.svg') }}" alt=""> <!--JINJA-->
                         <div class="text_icon_inner">
                             <div class="icon_title"><span class="icon_title_span">Бешенство</span></div>
                             <div class="icon_subtitle"><span class="icon_subtitle_span">Ежегодно в мире от этой болезни умирает свыше 55000 человек. Около 15 миллионов людей, пострадавших от укусов бродячих собак.</span></div>
@@ -133,7 +133,7 @@
         <div class="bot_inner">
             <div class="bot_inner_in">
                 <div class="bot_icon">
-                    <img class="img_icon_bot" src="/img/icon/telegram_icon_1.svg" alt=""> <!--JINJA-->
+                    <img class="img_icon_bot" src="{{ url_for('static/img/icon' filename='telegram_icon_1.svg') }}" alt=""> <!--JINJA-->
                 </div>
                 <div class="bot_text">
                     <div class="bot_text_inner">
@@ -161,7 +161,7 @@
             </div>
             <div class="artist_item">
                 <div class="artist_char">
-                    <img class="art_icon" width="350px" height="300px"  src="/img/human/01.png" alt="">
+                    <img class="art_icon" width="350px" height="300px"src="{{ url_for('static/img/human' filename='01.png') }}" alt="">
                     <div class="text_art_char">
                         <div class="artist_name"><span>01.</span> Леонардо Ди Каприо</div>
                         <div class="artist_subtitle">Желание кормить беспризорных животных у актера появилось рано. А как только в кармане у голливудского актера зашуршали купюры, он стал основателем  приютов для бездомных животных. Знаменитость пожертвовала $1 млн Всемирному фонду дикой природы на сохранение популяции тигров.</div>
@@ -169,14 +169,14 @@
                   
                 </div>
                 <div class="artist_char">
-                    <img class="art_icon liza_border"  width="350px" height="300px"  src="/img/human/liza.png" alt="">
+                    <img class="art_icon liza_border"  width="350px" height="300px" src="{{ url_for('static/img/human' filename='02.png') }}" alt="">
                     <div class="text_art_char">
                         <div class="artist_name"><span>02.</span> Лиза Эдельштейн</div>
                         <div class="artist_subtitle">Актриса Лиза Эдельштейн, исполнившая Кадди в сериале «Доктор Хаус», за помощь приютам животных прозвали сестрой милосердия. Лиза выступает на тематических мероприятиях, ищет хозяев, которые смогут подарить кров и заботу, а также помогает братьям меньшим после ураганов.</div>
                     </div>
                 </div>
                 <div class="artist_char">
-                    <img class="art_icon" width="350px" height="300px"  src="/img/human/03.png" alt="">
+                    <img class="art_icon" width="350px" height="300px" src="{{ url_for('static/img/human' filename='03.png') }}" alt="">
                     <div class="text_art_char">
                         <div class="artist_name"><span>03.</span> Том Харди</div>
                         <div class="artist_subtitle">Актер призывает людей брать питомцев из приютов, а не покупать в магазинах или питомниках. Одну из своих собак Том подобрал на улице. Пес был с ним везде, даже на съемочной площадке и кинопремьерах. Вместе с Вуди актер рассказывал детям сказки на канале "BBC".</div>
@@ -198,7 +198,7 @@
             </div>
             <div class="team_char_block">
                 <div class="team_char">
-                    <div class="team_icon"><img src="/img/team/icon-cha01r.png" alt=""></div>
+                    <div class="team_icon"><img src="{{ url_for('static/img/team' filename='icon-cha01r.png') }}" alt=""></div>
                     <div class="team_name"><span class="team_span_numb">01.</span> Шейхислямов Камиль</div>
                     <div class="team_about_us">Full-stack Developer. Опыт в разработке 2 года.</div>
                 </div>
@@ -290,6 +290,6 @@
   
 
     
-   <script src="{{ url_for('static', filename='main.js') }}"></script> <!--JINJA-->
+   <script src="{{ url_for('static/js', filename='main.js') }}"></script> <!--JINJA-->
 </body>
 </html>
